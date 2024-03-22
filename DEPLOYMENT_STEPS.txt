@@ -1,0 +1,45 @@
+Here's the formatted deployment steps for publishing a development deployment as text:
+
+---
+
+### Steps for Publishing Development Deployment
+
+1. **Stage Changes:**
+   ```
+   git add -A
+   ```
+
+   This command stages all changes for commit, including new files, modified files, and deleted files.
+
+2. **Commit Changes:**
+   ```
+   git commit -m "Your commit message"
+   ```
+
+   Replace `"Your commit message"` with a concise and descriptive message that summarizes the changes made in this commit.
+
+3. **Push to Remote Repository:**
+   ```
+   git push origin main
+   ```
+
+   This command pushes your committed changes to the `main` branch of the remote repository named `origin`. Make sure to replace `main` with the appropriate branch name if you're working on a different branch.
+
+---
+
+Additional Information (Missing):
+
+- Before pushing changes, ensure that your local repository is up to date with the remote repository by pulling any changes from the remote:
+  ```
+  git pull origin main
+  ```
+
+- If conflicts arise during the pull or push process, resolve them locally before proceeding with the commit and push steps.
+
+- It's good practice to review your changes using `git status` before committing to ensure that only intended changes are included in the commit.
+
+- Consider running tests or performing any necessary validations locally before pushing changes to the remote repository.
+
+- After pushing changes, you may want to inform your team members or stakeholders about the updates made and any relevant information they need to know.
+
+Feel free to add any specific details or customize these steps further based on your workflow and requirements.
