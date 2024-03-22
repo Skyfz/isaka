@@ -1,6 +1,6 @@
 site:
   name: ISAKA
-  site: 'https://isakaconsult.co.za'
+  site: 'https://skyfz.github.io/isaka/'
   base: '/'
   trailingSlash: false
 
