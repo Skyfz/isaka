@@ -11,7 +11,7 @@ metadata:
   title:
     default: ISAKA
     template: '%s — ISAKA'
-  description: "\U0001F680 Empowering businesses with tailored procurement solutions across diverse sectors. Contact us for cost-effective and efficient procurement services."
+  description: "Tailored procurement solutions across diverse sectors."
   robots:
     index: true
     follow: true
