@@ -82,12 +82,6 @@ const metadata = {
         icon: 'tabler:user-question',
       },
       {
-        title: 'Best Practices',
-        description:
-          'Enabling low-cost solutions that deliver exceptional experiences.',
-        icon: 'tabler:list-check',
-      },
-      {
         title: 'Environmental Sustainability',
         description:
           'Equitably contributing to climate change and a greener future.',
@@ -98,12 +92,6 @@ const metadata = {
         description:
           "Surpassing industry standards for a more effective supply chain.",
         icon: 'tabler:scan-eye',
-      },
-      {
-        title: 'Innovation & Collaboration',
-        description:
-          'Fostering innovation, collaboration, and easy supply experiences.',
-        icon: 'tabler:military-rank',
       },
       {
         title: 'B-BBEE',
@@ -148,17 +136,32 @@ const metadata = {
           '',
       },
       {
-        title: 'Cleaning Supplies',
-        description:
-          '',
-      },
-      {
-        title: 'Laundry Equipment',
+        title: 'Industrial Supplies',
         description:
           '',
       },
       {
         title: 'Mining Machinery',
+        description:
+          '',
+      },
+      {
+        title: 'Tools & Hardware',
+        description:
+          '',
+      },
+      {
+        title: 'Electrical Components',
+        description:
+          '',
+      },
+      {
+        title: 'Maintenance & Repair Products',
+        description:
+          '',
+      },
+      {
+        title: 'Material Handling Equipment',
         description:
           '',
       },
@@ -191,11 +194,11 @@ const metadata = {
       },
       {
         title: 'South Africa',
-        description: 'Cape Town'
+        description: 'Johannesburg'
       },
       {
         title: 'D.R.C',
-        description: 'Kinshasa'
+        description: 'Lubumbashi'
       },
     ]}
   />
@@ -275,33 +278,34 @@ images={[
   <Testimonials
     title="What our users say?"
     testimonials={[
-      {
-        testimonial: `Isaka's procurement solutions have been invaluable to our organization. Their expertise spans across various sectors, making them a trusted partner for our procurement needs.`,
-        name: 'Cary Kennedy',
-        job: 'Project Manager',
-        image: {
-          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Cary Kennedy Image',
-        },
-      },
-      {
-        testimonial: `I'm impressed by Isaka's ability to understand the unique challenges of different industries. Their tailored approach to procurement has greatly improved our operations.`,
-        name: 'Josh Wilkinson',
-        job: 'Director',
-        image: {
-          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Josh Wilkinson Image',
-        },
-      },
-      {
-        testimonial: `Working with Isaka has been a game-changer for our business. Their team's professionalism and attention to detail have exceeded our expectations.`,
-        name: 'Sidney Hansen',
-        job: 'Specialist',
-        image: {
-          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          alt: 'Sidney Hansen Image',
-        },
-      },
+    {
+      "testimonial": " Their expertise spans across various sectors, making them a trusted partner for our procurement needs.",
+      "name": "Cary Kennedy",
+      "job": "Project Manager",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Cary Kennedy Image"
+      }
+    },
+    {
+      "testimonial": "I'm impressed by Isaka's ability to understand the unique challenges of different industries.",
+      "name": "Josh Wilkinson",
+      "job": "Director",
+      "image": {
+        "src": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Josh Wilkinson Image"
+      }
+    },
+    {
+      "testimonial": "Isaka's professionalism and attention to detail have exceeded our expectations.",
+      "name": "Sidney Hansen",
+      "job": "Specialist",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Sidney Hansen Image"
+      }
+    }
+
     ]}
     callToAction={{
       target: '_blank',
@@ -324,7 +328,7 @@ images={[
     items={[
       {
         title: 'Phone',
-        description: '076-534-9486',
+        description: '064-234-5962',
         icon: 'tabler:phone',
       },
       {
@@ -385,19 +389,19 @@ images={[
     items={[
       {
       title: 'How can I place an order?',
-      description: 'Orders can be placed via telephone, email, or WhatsApp. For telephone orders, call +27 64 234 5962. For email orders, send your request to info@isakaconsult.co.za. International clients can place orders via WhatsApp at +27 76 250 6512.',
+      description: 'For telephone orders, call +27 64 234 5962. For email orders, send your request to info@isakaconsult.co.za.',
     },
     {
       title: 'What are the shipping options within South Africa?',
-      description: 'Shipping within Gauteng is free. For the rest of South Africa, shipping costs depend on the order quantity. Please contact us for specific shipping rates.',
+      description: 'Shipping costs depend on the order quantity. Please contact us for specific shipping rates.',
     },
     {
       title: 'What are the shipping options for Lubumbashi, DRC?',
-      description: 'For orders in Lubumbashi, Democratic Republic of Congo, the shipping method is Standard. The plate number is 3 USD/Kg, and the delivery time is 10-12 days from dispatch.',
+      description: 'The plate number is 3 USD/Kg, and the delivery time is 10-12 days from dispatch.',
     },
     {
       title: 'What are the shipping options for Kinshasa, DRC?',
-      description: 'For orders in Kinshasa, Democratic Republic of Congo, the shipping method is Standard. The plate number is 5 USD/Kg, and the delivery time is 10-12 days from dispatch.',
+      description: 'The plate number is 5 USD/Kg, and the delivery time is 10-12 days from dispatch.',
     },
     {
       title: 'Do you offer bulk discounts?',
@@ -405,7 +409,7 @@ images={[
     },
     {
       title: 'What payment methods do you accept?',
-      description: 'We accept the following payment methods: Purchase orders, Electronic funds transfer (EFT), Credit card payments, and Credit terms.',
+      description: 'Purchase orders, Electronic funds transfer (EFT), Credit card payments, and Credit terms.',
     },
     ]}
   >
