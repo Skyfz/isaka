@@ -10,6 +10,8 @@ module.exports = {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        darkGray: 'rgba(0, 0, 0, 0.5)', // Custom dark gray color with RGBA values
+        dark: 'var(--aw-color-bg-page-dark)', // Custom dark color with --aw-color-bg-page-dark
       },
       fontFamily: {
         sans: ['var(--aw-font-sans)', ...defaultTheme.fontFamily.sans],

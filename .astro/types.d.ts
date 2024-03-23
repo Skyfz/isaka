@@ -136,44 +136,65 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"post": {
-"astrowind-template-in-depth.mdx": {
-	id: "astrowind-template-in-depth.mdx";
-  slug: "astrowind-template-in-depth";
-  body: string;
-  collection: "post";
-  data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
-"get-started-website-with-astro-tailwind-css.md": {
-	id: "get-started-website-with-astro-tailwind-css.md";
-  slug: "get-started-website-with-astro-tailwind-css";
+"Commercial.md": {
+	id: "Commercial.md";
+  slug: "commercial";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"how-to-customize-astrowind-to-your-brand.md": {
-	id: "how-to-customize-astrowind-to-your-brand.md";
-  slug: "how-to-customize-astrowind-to-your-brand";
+"Consumables.md": {
+	id: "Consumables.md";
+  slug: "consumables";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"landing.md": {
-	id: "landing.md";
-  slug: "landing";
+"Education.md": {
+	id: "Education.md";
+  slug: "education";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
-"markdown-elements-demo-post.mdx": {
-	id: "markdown-elements-demo-post.mdx";
-  slug: "markdown-elements-demo-post";
+"Government.md": {
+	id: "Government.md";
+  slug: "government";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">
-} & { render(): Render[".mdx"] };
-"useful-resources-to-create-websites.md": {
-	id: "useful-resources-to-create-websites.md";
-  slug: "useful-resources-to-create-websites";
+} & { render(): Render[".md"] };
+"Healthcare.md": {
+	id: "Healthcare.md";
+  slug: "healthcare";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"Hospitality.md": {
+	id: "Hospitality.md";
+  slug: "hospitality";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"Industrial.md": {
+	id: "Industrial.md";
+  slug: "industrial";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"Manufacturing.md": {
+	id: "Manufacturing.md";
+  slug: "manufacturing";
+  body: string;
+  collection: "post";
+  data: InferEntrySchema<"post">
+} & { render(): Render[".md"] };
+"Retail.md": {
+	id: "Retail.md";
+  slug: "retail";
   body: string;
   collection: "post";
   data: InferEntrySchema<"post">

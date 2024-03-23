@@ -1,4 +1,49 @@
 ---
+/* import Headline from '~/components/ui/Headline.astro';
+import ItemGrid from '~/components/ui/ItemGrid.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Faqs } from '~/types';
+
+const {
+  title = '',
+  subtitle = '',
+  tagline = '',
+  items = [],
+  columns = 2,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props as Faqs;
+
+function toggleCollapse(event) {
+  const content = event.target.nextElementSibling;
+  content.classList.toggle('hidden');
+}
+
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <div class="grid grid-cols-1 gap-y-8 md:gap-y-12">
+    {items.map((item, index) => (
+      <div key={index}>
+        <button class="flex items-center justify-between w-full px-4 py-2 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg focus:outline-none" onclick="toggleCollapse(event)">
+          {item.title}
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transform transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a1 1 0 01-1-1V3a1 1 0 012 0v14a1 1 0 01-1 1z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <div class="hidden px-4 py-2 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 rounded-lg">
+          {item.description}
+        </div>
+      </div>
+    ))}
+  </div>
+</WidgetWrapper> */
+
+
 import Headline from '~/components/ui/Headline.astro';
 import ItemGrid from '~/components/ui/ItemGrid.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
@@ -23,11 +68,11 @@ const {
   <ItemGrid
     items={items}
     columns={columns}
-    defaultIcon="tabler:chevron-right"
+    defaultIcon="tabler:chevrons-right"
     classes={{
       container: `${columns === 1 ? 'max-w-4xl' : ''} gap-y-8 md:gap-y-12`,
       panel: 'max-w-none',
       icon: 'flex-shrink-0 mt-1 w-6 h-6 text-primary',
     }}
   />
-</WidgetWrapper>
+</WidgetWrapper> 
