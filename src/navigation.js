@@ -151,12 +151,12 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        // { text: 'Press', href: '#' },
+        { text: 'About', href: '/#about' },
+        //{ text: 'Blog', href: '#' },
+        { text: 'Careers', href: '/#contact' },
+         { text: 'Press', href: '/#contact' },
         // { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
+        { text: 'Social Impact', href: '/#contact' },
         // { text: 'Shop', href: '#' },
       ],
     },
@@ -164,9 +164,9 @@ export const footerData = {
       title: 'Enterprise',
       links: [
         // { text: 'Developers', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Funding', href: '#' },
-        { text: 'Founding', href: '#' },
+        { text: 'Partners', href: '/#contact' },
+        { text: 'Funding', href: '/#contact' },
+        { text: 'Founding', href: '/#contact' },
         // { text: 'Software', href: '#' },
       ],
     },
@@ -177,9 +177,9 @@ export const footerData = {
   ],
   socialLinks: [
     //{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('#') },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'http://instagram.com/isaka_ltd' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'http://facebook.com/isaka.consultancy' },
+    //{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('#') },
     //{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: '#' },
   ],
   footNote: `
