@@ -14,8 +14,7 @@ const {
 } = Astro.props as ItemGrid;
 
 const {
-  container: containerClass = "",
-  // container: containerClass = "sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+  container: containerClass = "sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
   panel: panelClass = "",
   title: titleClass = "",
   description: descriptionClass = "",
@@ -29,7 +28,7 @@ const {
             columns === 4
               ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
               : columns === 3
-              ? "lg:grid-cols-3 justify-center sm:grid-cols-2"
+              ? "lg:grid-cols-3 sm:grid-cols-1"
               : columns === 2
               ? "sm:grid-cols-2 "
               : ""
@@ -47,21 +46,21 @@ const {
           }) => (
             <div
               class={twMerge(
-                "relative flex flex-col",
+                "justify-self-center flex-initial w-80",
                 panelClass,
                 itemClasses?.panel
               )}
             >
             {(icon || defaultIcon) && (
-              <div class="flex items-center justify-center">
+              <div class="flex justify-center">
                 {/* Replace the <Icon> component with an <Image> component or an <img> tag */}
                 <Image
-                  src={icon || defaultIcon}
-                  width={85}
-                  height={200}
-                  alt="Image Alt Text"
+                  src= {icon}
+                  width={100}
+                  height={60}
+                  alt= {description}
                   class={twMerge(
-                    "mb-4 w-10 h-10 rounded-lg",
+                    "mb-4 rounded-lg bg-transparent",
                     itemClasses?.icon
                   )}
                 />
@@ -80,7 +79,7 @@ const {
               {description && (
                 <p
                   class={twMerge(
-                    "text-muted mt-2 text-center",
+                    "text-muted mt-1 text-center",
                     descriptionClass,
                     itemClasses?.description
                   )}
