@@ -2,7 +2,7 @@
 //import { getPermalink, getAsset } from './utils/permalinks';
 import { getPermalink } from './utils/permalinks';
 
-const base = '/isaka'; // Define the base path
+const base = 'isaka'; // Define the base path
 
 const about = base + '#about';
 const services = base + '#services';
