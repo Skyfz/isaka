@@ -10,4 +10,4 @@ current_date_time=$(date +"%Y-%m-%d %H:%M:%S")
 git commit -m "Commit on $current_date_time"
 
 # Push changes to the 'main' branch on the remote named 'origin'
-git push origin main
+git push main main
