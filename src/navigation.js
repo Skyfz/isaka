@@ -9,6 +9,8 @@ const services = base + '#services';
 const sectors = base + '#sectors';
 const faq = base + '#faq';
 const contact = base + '#contact';
+const terms = '/isaka/terms';
+const policy = '/isaka/privacy';
 
 export const headerData = {
   links: [
@@ -184,8 +186,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: '/isaka/terms' },
-    { text: 'Privacy Policy', href:'isaka/privacy'},
+    { text: 'Terms', href: terms },
+    { text: 'Privacy Policy', href:policy},
   ],
   socialLinks: [
     //{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
