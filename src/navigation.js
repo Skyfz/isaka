@@ -39,7 +39,7 @@ export const headerData = {
     },
     {
       text: 'Services',
-      href: getPermalink(services),
+      href: services,
       // links: [
       //   {
       //     text: 'Features (Anchor Link)',
@@ -73,7 +73,7 @@ export const headerData = {
     },
     {
       text: 'Sectors',
-      href: getPermalink(sectors),
+      href: sectors,
       /* links: [
         {
           text: 'Lead Generation',
@@ -103,7 +103,7 @@ export const headerData = {
     },
     {
       text: 'FAQ',
-      href: getPermalink(faq),
+      href: faq,
       /* links: [
         {
           text: 'Blog List',
@@ -129,7 +129,7 @@ export const headerData = {
     },
     {
       text: 'Contact',
-      href: getPermalink(contact),
+      href: contact,
     },
   ],
   actions: [{ text: 'Contact Us', href: 'mailto:info@isakaconsult.co.za', target: '_blank' }],
@@ -184,8 +184,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms', href: '/terms' },
+    { text: 'Privacy Policy', href:'/privacy'},
   ],
   socialLinks: [
     //{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
