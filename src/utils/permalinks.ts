@@ -13,7 +13,7 @@ const createPath = (...params: string[]) => {
   return '/' + paths + (SITE.trailingSlash && paths ? '/' : '');
 };
 
-const BASE_PATHNAME = SITE.base || '/';
+const BASE_PATHNAME = SITE.base || '/isaka';
 
 export const cleanSlug = (text = '') =>
   trimSlash(text)
@@ -65,7 +65,7 @@ export const getPermalink = (slug = '', type = 'page'): string => {
 };
 
 /** */
-export const getHomePermalink = (): string => getPermalink('/');
+export const getHomePermalink = (): string => getPermalink('/isaka');
 
 /** */
 export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);

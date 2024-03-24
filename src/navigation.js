@@ -2,11 +2,22 @@
 //import { getPermalink, getAsset } from './utils/permalinks';
 import { getPermalink } from './utils/permalinks';
 
+const base = '/isaka'; // Define the base path
+
+const about = base + '#about';
+const services = base + '#services';
+const sectors = base + '#sectors';
+const faq = base + '#faq';
+const contact = base + '#contact';
+
 export const headerData = {
   links: [
     {
       text: 'About',
-      href: getPermalink('/#about'),
+      href: getPermalink(about),
+
+      //href: getPermalink(about),
+
       // links: [
       //   {
       //     text: 'SaaS',
@@ -28,7 +39,7 @@ export const headerData = {
     },
     {
       text: 'Services',
-      href: getPermalink('/#services'),
+      href: getPermalink(services),
       // links: [
       //   {
       //     text: 'Features (Anchor Link)',
@@ -62,7 +73,7 @@ export const headerData = {
     },
     {
       text: 'Sectors',
-      href: getPermalink('/#sectors'),
+      href: getPermalink(sectors),
       /* links: [
         {
           text: 'Lead Generation',
@@ -92,7 +103,7 @@ export const headerData = {
     },
     {
       text: 'FAQ',
-      href: getPermalink('/#faq'),
+      href: getPermalink(faq),
       /* links: [
         {
           text: 'Blog List',
@@ -118,7 +129,7 @@ export const headerData = {
     },
     {
       text: 'Contact',
-      href: getPermalink('/#contact'),
+      href: getPermalink(contact),
     },
   ],
   actions: [{ text: 'Contact Us', href: 'mailto:info@isakaconsult.co.za', target: '_blank' }],
@@ -152,12 +163,12 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '/#about' },
+        { text: 'About', href: about },
         //{ text: 'Blog', href: '#' },
-        { text: 'Careers', href: '/#contact' },
-         { text: 'Press', href: '/#contact' },
+        { text: 'Careers', href: contact },
+         { text: 'Press', href: contact },
         // { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '/#contact' },
+        { text: 'Social Impact', href: contact },
         // { text: 'Shop', href: '#' },
       ],
     },
@@ -165,9 +176,9 @@ export const footerData = {
       title: 'Enterprise',
       links: [
         // { text: 'Developers', href: '#' },
-        { text: 'Partners', href: '/#contact' },
-        { text: 'Funding', href: '/#contact' },
-        { text: 'Founding', href: '/#contact' },
+        { text: 'Partners', href: contact },
+        { text: 'Funding', href: contact },
+        { text: 'Founding', href: contact },
         // { text: 'Software', href: '#' },
       ],
     },
