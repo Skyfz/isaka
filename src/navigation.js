@@ -1,6 +1,6 @@
 //import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 //import { getPermalink, getAsset } from './utils/permalinks';
-import { getPermalink } from './utils/permalinks';
+//import { getPermalink } from './utils/permalinks';
 
 const base = ''; // Define the base path
 
@@ -184,8 +184,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: '/terms' },
-    { text: 'Privacy Policy', href:'/privacy'},
+    { text: 'Terms', href: '/isaka/terms' },
+    { text: 'Privacy Policy', href:'isaka/privacy'},
   ],
   socialLinks: [
     //{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
