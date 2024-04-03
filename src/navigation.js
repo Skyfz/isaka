@@ -191,8 +191,8 @@ export const footerData = {
   ],
   socialLinks: [
     //{ ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'http://instagram.com/isaka_ltd' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'http://facebook.com/isaka.consultancy' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/isaka_ltd' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/isaka.consultancy' },
     //{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('#') },
     //{ ariaLabel: 'Github', icon: 'tabler:brand-github', href: '#' },
   ],
