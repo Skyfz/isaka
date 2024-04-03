@@ -86,7 +86,7 @@ const getSite = () => {
   const _default = {
     name: DEFAULT_SITE_NAME,
     site: undefined,
-    base: '/isaka',
+    base: '',
     trailingSlash: false,
 
     googleSiteVerificationId: '',

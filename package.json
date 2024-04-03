@@ -2,7 +2,7 @@
   "name": "@onwidget/astrowind",
   "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
   "version": "1.0.0-beta.20",
-  "homepage": "https://skyfz.github.io/isaka",
+  "homepage": "https://isakaconsult.co.za",
   "private": true,
   "scripts": {
     "dev": "astro dev",

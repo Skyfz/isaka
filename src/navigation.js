@@ -9,8 +9,8 @@ const services = base + '#services';
 const sectors = base + '#sectors';
 const faq = base + '#faq';
 const contact = base + '#contact';
-const terms = '/isaka/terms';
-const policy = '/isaka/privacy';
+const terms = '/terms';
+const policy = '/privacy';
 
 export const headerData = {
   links: [
