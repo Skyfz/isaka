@@ -4,9 +4,9 @@ title: Retail
 excerpt: 'Enhancing Retail: Procurement Services in the DRC and South Africa'
 image: ~/assets/images/SECTORS/Retail.jpg
 tags:
-  - astro
-  - tailwind css
-  - theme
+  - retail
+  - procurement
+  - equipment
 metadata:
   canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
 ---

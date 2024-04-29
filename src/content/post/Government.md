@@ -5,9 +5,9 @@ excerpt: 'Streamlining Government Procurement: Strategies in the DRC and South A
 image: ~/assets/images/SECTORS/Government.jpg
 category: Documentation
 tags:
-  - astro
-  - tailwind css
-  - front-end
+  - government
+  - procurement
+  - strategies
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---

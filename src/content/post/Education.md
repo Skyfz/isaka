@@ -7,8 +7,8 @@ image: ~/assets/images/SECTORS/Education.jpg
 category: Services
 tags:
   - education
-  - Johannesburg
-  - Cape Town
+  - johannesburg
+  - cape Town
   - learning
   - sports gear
   - supplies

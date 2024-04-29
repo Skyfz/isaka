@@ -6,13 +6,13 @@ excerpt: A Look into ISAKA's Range of Cleaning, Maintenance, and Food Service Su
 category: Products
 image: ~/assets/images/SECTORS/Consumables.jpg
 tags:
-  - Cleaning
-  - Maintenance
+  - cleaning
+  - maintenance
   - supplies
-  - Food
-  - Industrial
+  - food
+  - industrial
   - hygiene
-  - Mining
+  - mining
 
 ---
 

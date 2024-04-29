@@ -4,9 +4,9 @@ title: Commercial
 excerpt: "Unveiling South Africa's Commercial Procurement Services: In-Demand Brands and Beyond"
 image: ~/assets/images/SECTORS/Commercial.jpg
 tags:
-  - landing-pages
-  - front-end
-  - resources
+  - commercial
+  - procurement
+  - brands
 metadata:
   canonical: https://astrowind.vercel.app/landing
 ---

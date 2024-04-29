@@ -4,9 +4,9 @@ title: Hospitality
 excerpt: "Elevating Hospitality: Procurement in South Africa's High-Tourism Cities"
 image: ~/assets/images/SECTORS/Hospitality.jpg
 tags:
-  - markdown
-  - blog
-  - Astro
+  - hospitality
+  - procurement
+  - brands
 ---
 
 ### Introduction 
