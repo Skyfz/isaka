@@ -8,7 +8,7 @@ tags:
   - procurement
   - brands
 metadata:
-  # canonical: https://astrowind.vercel.app/landing
+  description: "Isaka's Commercial Blog Page"
 ---
 ### Introduction 
 

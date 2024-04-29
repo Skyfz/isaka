@@ -9,7 +9,7 @@ tags:
   - procurement
   - strategies
 metadata:
-  # canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  description: "Isaka's Government Blog Page"
 ---
 
 ### Introduction
