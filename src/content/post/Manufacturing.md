@@ -1,207 +1,93 @@
 ---
 publishDate: 2023-07-17T00:00:00Z
+author: Gift Mbombo
 title: Manufacturing
-excerpt: While easy to get started, Astrowind is quite complex internally.  This page provides documentation on some of the more intricate parts.
-image: ~/assets/images/SECTORS/Manufacturing.jpg
-category: Documentation
+excerpt: "Enhancing Infrastructure in the DRC: Steel Production, Material Handling, and Safety Equipment."
+image: ~/assets/images/SECTORS/Industrial.jpg
+category: Products
 tags:
-  - astro
-  - tailwind css
-  - front-end
+  - Suppliers
+  - Industrial
+  - Manufacturing
+  - Infrastructure
+  - Mining Equipment
+  - Construction
+  - Materials
 metadata:
-  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  description: "Isaka's Manufacturing and Infrastructure Blog Page"
 ---
+## Introduction
+Welcome to Isaka's Manufacturing and Infrastructure Blog Page!
 
-import DListItem from '~/components/ui/DListItem.astro';
-import ToggleTheme from '~/components/common/ToggleTheme.astro';
+At Isaka, we are dedicated to enhancing infrastructure in the Democratic Republic of the Congo (DRC) through our comprehensive range of manufacturing supplies. Our focus areas include steel production, material handling solutions, safety equipment, and mining machinery.
 
-## Overview
+### Steel Production
 
-It can be a somewhat daunting task trying to get a handle on _AstroWind_ internals, and particularly various points of usage.
+We supply high-quality steel products for various industries, ensuring durability and performance in demanding applications.
 
-This page outlines and clarifies some of the techniques found in _AstroWind_. Use it as a guide for further modification, or an instructional for techniques to use in your own endeavors.
+#### Our Products
 
-## Styling
+- **Steel Beams**: Structural steel beams used in construction projects for support and load-bearing purposes.
+- **Steel Plates**: Flat steel plates used in various applications, including construction, manufacturing, and infrastructure projects.
+- **Steel Pipes**: Tubular steel products used for conveying fluids, gas, and other materials in industrial and infrastructure applications.
+- **Steel Bars**: Long steel bars used in construction, manufacturing, and fabrication processes for reinforcement and structural purposes.
+- **Steel Sheets**: Thin, flat steel sheets used in manufacturing, fabrication, and construction for various applications, including roofing and cladding.
+- **Steel Wire**: Wire products made from steel used in fencing, construction reinforcement, and manufacturing processes.
+- **Steel Coils**: Rolled steel coils used in manufacturing, fabrication, and construction applications, including automotive, appliances, and machinery.
+- **Steel Structures**: Prefabricated steel structures used in construction projects for buildings, warehouses, and industrial facilities.
+- **Steel Fasteners**: Bolts, nuts, screws, and other fastening products made from steel used in construction, manufacturing, and infrastructure projects.
+- **Steel Reinforcement Bars** *(Rebars)*: Ribbed steel bars used to reinforce concrete structures in construction projects, such as bridges, highways, and buildings.
 
-As the name suggests, _AstroWind_ relies on _TailWind_ for styling. Furthermore, _AstroWind_ defines custom low level style settings which are incorporated into _TailWind_ seamlessly, and which provides consistency for higher level styling constructs, as well as enabling dark mode.
+### Material Handling Solutions
 
-The styling mechanism consists of the following files (all paths are prefixed with `/src/` ):
+Our material handling equipment streamlines processes, improves efficiency, and enhances workplace safety across industries.
 
-<DListItem dt="assets/styles/tailwind.css">
-  This file is essentially an extension of _TailWind's_ base.css. High-level component styles are defined here. Note
-  also styling on elements selected by 'attribute' selectors at the bottom of the files, particularly those selected by
-  'data' attributes.
-</DListItem>
-<DListItem dt="components/CustomStyles.astro">
-  Defines custom colors and fonts. For these to take effect in the 'base.css' file, they need to be loaded in the html
-  header section. See next.
-</DListItem>
-<DListItem dt="layouts/Layout.astro">
-  This layout is used for all of the pages rendered by _AstroWind_. The contents of _tailwind.css_ and
-  _CustomStyles.astro_ component, described above, is injected into the html header.
-</DListItem>
 
-### Dark Mode
+- **Cranes**: Various types of cranes, including tower cranes, mobile cranes, and overhead cranes, used for lifting and moving heavy materials and equipment in construction, mining, and industrial settings.
+- **Forklifts**: Forklift trucks used for lifting, carrying, and stacking materials and goods in warehouses, storage yards, and manufacturing facilities.
+- **Conveyor Systems**: Conveyor belts and conveyor systems used for transporting bulk materials, such as ore, coal, aggregates, and agricultural products, in mining, manufacturing, and logistics operations.
+- **Hoists**: Mechanical devices used for lifting and lowering loads vertically in construction, mining, and industrial applications.
+- **Pallet Jacks**: Manual or powered pallet trucks used for moving palletized loads within warehouses and distribution centers.
+- **Stackers**: Equipment used for stacking materials, such as pallets, crates, and containers, in storage facilities and logistics operations.
+- **Shelving and Racking Systems**: Storage systems designed for organizing and storing goods and materials in warehouses, retail stores, and industrial facilities.
+- **Automated Guided Vehicles (AGVs)**: Self-guided vehicles equipped with navigation systems used for transporting materials and goods in manufacturing and logistics environments.
+- **Drum Handling Equipment**: Equipment used for lifting, moving, and pouring drums and barrels containing liquids and bulk materials.
+- **Lift Tables**: Hydraulic or pneumatic lifting platforms used for ergonomic positioning of materials and workpieces in assembly, packaging, and maintenance operations.
 
-_Dark Mode_ is triggered by the little 'sunlight' icon:<ToggleTheme/>in the page header. It is defined in the _components/common/ToggleTheme.astro_, but the event is attached and the action defined in _components/common/BasicScripts.astro_ in the following snippet:
+### Safety Equipment
 
-```javascript
-attachEvent('[data-aw-toggle-color-scheme]', 'click', function () {
-  if (defaultTheme.endsWith(':only')) {
-    return;
-  }
-  document.documentElement.classList.toggle('dark');
-  localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-});
-```
+Isaka offers a wide range of safety gear and protective equipment to safeguard workers and enhance workplace safety standards.
 
-Note that this is a client event. _BasicScripts.astro_ defines several other client-side functionality as well as this one.
+#### Safety Products
+- Helmets
+- Safety Glasses/Goggles
+- Respirators
+- Ear Protection
+- Gloves
+- High-Visibility Clothing
+- Safety Footwear
+- Harnesses and Fall Arrest Systems
+- Gas Detection Equipment
+- First Aid Kits
 
-## Advanced Slot Usage
+These safety equipment products are critical for ensuring the health, safety, and well-being of workers in mines, helping to mitigate risks and prevent accidents and injuries in hazardous environments.
 
-_slots_ are part of the component implementation, which is a common concept among many frameworks, including _Astrojs_. The typical slot definition in a component looks like this:
+### Mining Machinery
 
-```astro
----
-// (file: MyComponent.astro)
-const { title } = Astro.props;
-export interface Props {
-  title: string;
-}
----
+Explore our products and solutions tailored to meet the evolving needs of the manufacturing, infrastructure, and mining sectors.
 
-<div>
-  <h2>{title}</h2>
-  <slot />
-  <!-- slot contents injected here -->
-  <div></div>
-</div>
-```
 
-And in usage elsewhere:
 
-```astro
-import MyComponent from "~/components/MyComponent"; ...
-<MyComponent someArg="A Slot example">
-  <p>This content will be displayed in the slot</p>
-</MyComponent>
-```
+- **Excavators**: Heavy machinery used for excavation, earthmoving, and mining operations, including hydraulic excavators and dragline excavators.
+- **Bulldozers**: Tracked or wheeled vehicles equipped with a large metal blade used for pushing, grading, and moving soil, rocks, and other materials.
+- **Dump Trucks**: Off-highway trucks used for transporting bulk materials, such as ore, overburden, and waste, from mining sites to processing plants or stockpiles.
+- **Wheel Loaders**: Front-end loaders equipped with a large bucket used for loading, transporting, and stockpiling materials in mining and construction applications.
+- **Drill Rigs**: Machinery used for drilling blast holes, exploration boreholes, and production wells in mining and geotechnical drilling operations.
+- **Crushers and Screens**: Equipment used for crushing, screening, and sizing mined materials, including crushers, screens, and scalpers.
+- **Underground Loaders and Trucks**: Machinery designed for underground mining operations, including underground loaders, haul trucks, and utility vehicles.
+- **Continuous Miners**: Mining machines used for continuous cutting and mining of coal, ore, and other mineral deposits in underground mining operations.
+- **Rock Drills**: Machinery used for drilling blast holes and rock excavation in mining, quarrying, and construction applications.
+- **Processing Equipment**: Machinery used for processing mined materials, including mineral processing plants, concentrators, and smelters.
 
-### Alternate usage
+These mining machinery are essential for various stages of the mining process, supporting exploration, extraction, transportation, and processing of mineral resources.
 
-There's another way we can use slots, useful particularly when a component can have markdown content is as follows (study carefully...):
-
-```astro
----
-// (file: MyComponent.astro)
-
-const { title } = Astro.props;
-export interface Props {
-  title: string;
-}
-const content: string = await Astro.props.render('default');
----
-
-// renders the html to the 'content' variable
-<div>
-  <h2>{title}</h2>
-  <div set:html={content} />
-  <!-- slot contents injected here -->
-  <div></div>
-</div>
-```
-
-Whoa!! What's going on here?
-
-Notice there is no slot definition in the html portion of the component. Instead, what we do is have _Astro_ render the slot content (here, the 'default' content, but you can also render named slots) into a variable, and then use that content in a _div_ (for instance).
-
-So, if the usage is in a markdown file, like so:
-
-```mdx
-import MyComponent from '../../components/MyComponent';
-
-# Using the above component in a .mdx file (that can take components)
-
-{' '}
-
-<MyComponent title="This is a slot implementor">### Here is some markdown content - With a bullet item.</MyComponent>
-```
-
-_MyComponent_ renders the markdown to html and then injects it into the div.
-
-This actually has a big advantage -- consider that with the normal usage you don't have access to the slot contents: _Astro_ just plops the content into the _&lt;slot/&gt;_ tag. Using this method, however, allows you to access the content and further manipulate it before it gets inserted into the html.
-
-This allows a great deal of flexibility in component design.
-
-### Yet Another Step
-
-Now, we get to the techniques used in _AstroWind_, we'll use the _pages/index.astro_ file to illustrate.
-
-You'll note that the index file imports a lot of components, each one roughly analagous to a panel in the index page. Each of these components, in turn, is instantiated sequentially throughout the page. But, you'll notice that some of them use this kind of construct (we'll use the last section, _CallToAction_, as it is most illustrative of the technique):
-
-```astro
-<CallToAction
-  callToAction={{
-    text: 'Get template',
-    href: 'https://github.com/onwidget/astrowind',
-    icon: 'tabler:download',
-  }}
->
-  <Fragment slot="title">
-    Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-  </Fragment>
-
-  <Fragment slot="subtitle">
-    Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't waste
-    more time! :P
-  </Fragment>
-</CallToAction>
-```
-
-Some things to note, here:
-
-<DListItem dt="The <em>callToAction</em> argument">
-  This argument is actually being passed a javascript object -- not a string. (However, in the TS definition, it could
-  be a string...)
-</DListItem>
-<DListItem dt="There are several <em>Fragment</em> children">
-  Furthermore, these &lt;Fragment/&gt; elements each have a _slot="(value)"_ specifier.
-</DListItem>
-
-The latter seems odd, because &lt;Fragment/&gt; is a built-in component over which you have no control, and doesn't have a provision for rendering slots, <em>per se</em>.
-
-The answer lies in a paragraph in the _Astro_ docs, slots section, which states:
-
-> Use a `slot="my-slot"` attribute on the child element that you want to pass through to a matching slot `name="my-slot" />` placeholder in your component.
-
-That's pretty concise and a bit of a head-scratcher to read, but basically what it says is that:
-
-1. Given a component that defines a slot:
-1. you can reference a slot from a child element of that component and,
-1. provide content to the parent component's slot from the child by naming the slot in the child with a `slot="<slot-name>"` property assignment, where the _slot-name_ is the parent's slot.
-
-So, in the example above, the _CallToAction_ component defines the _subtitle_ slot, and the following _&lt;Fragment slot="subtitle"&gt;_ populates the slot with the following content:
-
-```astro
-<Fragment slot="subtitle">
-  Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't waste
-  more time! :P
-</Fragment>
-```
-
-And, the _CallToAction_ component defines and renders it thusly:
-
-```astro
----
-//...
-const { subtitle = await Astro.slots.render('subtitle') } = Astro.props;
----
-
-//...
-{subtitle && <p class="text-xl text-muted dark:text-slate-400" set:html={subtitle} />}
- //...
-```
-
-There's a lot to wrap your head around, here.
-
-Notice first that _subtitle_ is defined as a prop/argument, but it's being processed as a slot. Interestingly, prop args and slots seem to be somewhat interchangeable: if the subtitle was just a string, it would simply take that assignment. The main difference is that if you render them independently, you have to call the render with an _await_ modifier.

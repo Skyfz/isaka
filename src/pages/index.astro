@@ -116,10 +116,10 @@ const metadata = {
  id="stats"
  tagline="Statistics"
  stats={[
-   { title: 'Projects Completed', amount: '50+' },
-   { title: 'Revenue', amount: '13M' },
-   { title: 'Countries Served', amount: '6' },
-   { title: 'Clients Served', amount: '25+' },
+   { title: 'Projects Completed', amount: '50+',icon: 'tabler:briefcase' },
+   { title: 'Revenue', amount: '13M',icon: 'tabler:coin'  },
+   { title: 'Countries Served', amount: '6' ,icon: 'tabler:map-pin' },
+   { title: 'Clients Served', amount: '25+' ,icon: 'tabler:users' },
  ]}
 />
 
@@ -172,9 +172,9 @@ const metadata = {
       alt: 'Colorful Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Explore Our Product Range</h3>
-      Discover Our Range of Innovative Products and Gain a Competitive Edge
+    <Fragment slot="content" >
+      <h3 data-aos="zoom-in-up" class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Explore Our Product Range</h3>
+      <h3 data-aos="zoom-in-up">Discover Our Range of Innovative Products and Gain a Competitive Edge</h3>
     </Fragment>
 
     <Fragment slot="bg">
@@ -277,6 +277,33 @@ images={[
 />
 
 
+   <!-- CallToAction Widget *********** -->
+
+   <CallToAction
+   actions={[
+     {
+       variant: 'primary',
+       text: 'Donwload',
+       href: '/src/assets/catalogue.pdf',
+       download: 'catalogue.pdf',
+       target: '_blank',
+       icon: 'tabler:download',
+     },
+   ]}
+ >
+
+ 
+   <Fragment slot="title">
+     Catalogue
+   </Fragment>
+
+   <Fragment slot="subtitle">
+     Have a look at some of our available products
+   </Fragment>
+ </CallToAction>
+
+
+
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
@@ -326,8 +353,13 @@ images={[
     }}
     items={[
       {
-        title: 'Phone',
-        description: '064-234-5962',
+        title: 'Operations',
+        description: '+27 64 234 5962',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Business Development',
+        description: '+27 76 250 6512',
         icon: 'tabler:phone',
       },
       {
@@ -343,7 +375,36 @@ images={[
     ]}
   />
 
+  <!-- Brands Widget ****************** -->
 
+  <Brands
+  title="Partners & Associations"
+  subtitle="At Isaka, we believe in the power of collaboration to create exceptional experiences."
+  icons={[]}
+  images={[
+    {
+      src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEFq4YZUZ4KKfGhAhyp8S_81-8wQZrAeCBabEBjqnR8Q&s',
+      alt: 'NETIS',
+    },
+    {
+      src: 'https://www.medpark-clinic.com/assets/images/logo.png',
+      alt: 'MEDPARK',
+    },
+    {
+      src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1f1CWLiTwGs2pjXywkJh0fwkFQJ3dc0YVzOZGYln5Ig&s',
+      alt: 'MACSTEEL',
+    },
+    {
+      src: 'https://toplinesports.co.za/wp-content/uploads/Barron-Logo.jpg',
+      alt: 'BARON',
+    },
+    {
+      src: 'https://steiner.co.za/wp-content/uploads/2020/09/steineronline_logo.png',
+      alt: 'STEINER',
+    },
+  ]}
+  />
+  
   <!-- Steps Widget ****************** -->
 
   <Steps

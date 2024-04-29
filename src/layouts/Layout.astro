@@ -17,6 +17,9 @@ import { ViewTransitions } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
 
+import "aos/dist/aos.css"; // AOS styles
+
+
 export interface Props {
   metadata?: MetaDataType;
 }
@@ -50,5 +53,15 @@ const { language, textDirection } = I18N;
         content-visibility: auto;
       }
     </style>
+    <script>
+      import { aosInit } from "src/aos";
+  
+      // runs on initial page load
+      aosInit();
+    </script>
   </body>
 </html>
+
+
+<!-- help with astro and aos animations 
+https://webreaper.dev/posts/astro-aos-view-transitions/ -->

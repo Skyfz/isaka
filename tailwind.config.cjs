@@ -71,7 +71,7 @@ module.exports = {
       },
       animation: {
         'shake': 'shake 1.2s linear infinite',
-        'header': 'header 1.3s ease-in-out both',
+        'header': 'header 0.6s ease-out',
         'slide': 'slide 0.7s ease-in-out both',
         'expand': 'expand 1.3s ease-in-out both',
         'open': 'open 4s ease-in-out both',

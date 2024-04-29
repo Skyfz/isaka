@@ -181,6 +181,7 @@ export const footerData = {
         { text: 'Partners', href: contact },
         { text: 'Funding', href: contact },
         { text: 'Founding', href: contact },
+        { text: 'Modern Slavery Act', href: '/src/assets/Statement.pdf', download: 'catalogue.pdf'},
         // { text: 'Software', href: '#' },
       ],
     },

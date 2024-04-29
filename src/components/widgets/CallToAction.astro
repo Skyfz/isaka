@@ -44,7 +44,7 @@ const {
         <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
           {Array.isArray(actions) ? (
             actions.map((action) => (
-              <div class="flex w-full sm:w-auto">
+              <div data-aos="flip-up" data-aos-delay="100" class="flex w-full sm:w-auto">
                 <Button {...(action || {})} class="w-full sm:mb-0" />
               </div>
             ))
