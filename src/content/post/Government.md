@@ -9,7 +9,7 @@ tags:
   - procurement
   - strategies
 metadata:
-  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+  # canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
 
 ### Introduction

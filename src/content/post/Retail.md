@@ -8,7 +8,7 @@ tags:
   - procurement
   - equipment
 metadata:
-  canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
+  # canonical: https://astrowind.vercel.app/how-to-customize-astrowind-to-your-brand
 ---
 
 

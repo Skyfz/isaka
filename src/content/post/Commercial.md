@@ -8,7 +8,7 @@ tags:
   - procurement
   - brands
 metadata:
-  canonical: https://astrowind.vercel.app/landing
+  # canonical: https://astrowind.vercel.app/landing
 ---
 ### Introduction 
 
