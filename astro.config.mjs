@@ -26,7 +26,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   site: 'https://isakaconsult.co.za',
-  base: '/isaka',
+  //base: '/isaka',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
